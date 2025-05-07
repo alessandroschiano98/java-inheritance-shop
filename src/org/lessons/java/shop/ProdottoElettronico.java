@@ -2,7 +2,7 @@ package org.lessons.java.shop;
 
 import java.util.Random;
 
-public class Prodotto {
+public class ProdottoElettronico {
 
     // VARIABILI DI ISTANZA, PROPRIETA' ECC
     public int codice;
@@ -11,17 +11,17 @@ public class Prodotto {
     public float prezzo;
     public int iva;
 
-    public Prodotto(String nome, String descrizione, float prezzo, int iva) {
-        // CODICE (PRODOTTO));
+    public ProdottoElettronico(String nome, String descrizione, float prezzo, int iva) {
+        // CODICE (ProdottoElettronico));
         Random generator = new Random();
         this.codice = generator.nextInt(100000);
-        // NOME (PRODOTTO)
+        // NOME (ProdottoElettronico)
         this.nome = nome;
-        // DESCRIZIONE (PRODOTTO)
+        // DESCRIZIONE (ProdottoElettronico)
         this.descrizione = descrizione;
-        // PREZZO (PRODOTTO)
+        // PREZZO (ProdottoElettronico)
         this.prezzo = prezzo;
-        // CALCOLO IVA (PRODOTTO)
+        // CALCOLO IVA (ProdottoElettronico)
         this.iva = iva;
     }
 
