@@ -2,7 +2,7 @@ package org.lessons.java.shop;
 
 import org.lessons.java.shop.prodotti.Smartphone;
 
-public class MainProdottoElettronico {
+public class TestMain {
     public static void main(String[] args) {
 
         /*
@@ -18,9 +18,9 @@ public class MainProdottoElettronico {
          * System.out.println(computer.getNomeEsteso());
          */
 
-        Smartphone smartphone = new Smartphone("iPhone", "Apple", 950, 22, 123456789, 128);
+        Smartphone smartphone = new Smartphone("iPhone", "Apple", 950, 22, 1112223344, 128);
         System.out.println(smartphone.getcodiceIMEI());
-        System.out.println(smartphone.getmemoria());
+        System.out.println((smartphone.getmemoria()) + " gb");
         System.out.println(smartphone.getCodice());
         System.out.println(smartphone.getNome());
         System.out.println(smartphone.getMarca());
