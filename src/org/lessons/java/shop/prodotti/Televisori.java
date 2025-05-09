@@ -2,12 +2,9 @@ package org.lessons.java.shop.prodotti;
 
 import org.lessons.java.shop.ProdottoElettronico;
 
-public class Televisori extends ProdottoElettronico{
-  
+public class Televisori extends ProdottoElettronico {
 
-        public int dimensioniTelevisori;
-        public boolean tipologiaTelevisore;
-    
-    
-    
+        protected int dimensioniTelevisori;
+        protected boolean tipologiaTelevisore;
+
 }

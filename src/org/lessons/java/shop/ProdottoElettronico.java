@@ -7,29 +7,32 @@ public class ProdottoElettronico {
     // VARIABILI DI ISTANZA, PROPRIETA' ECC
     public int codice;
     public String nome;
-    public String descrizione;
+    public String marca;
     public float prezzo;
     public int iva;
 
-    public ProdottoElettronico(String nome, String descrizione, float prezzo, int iva) {
-        // CODICE (ProdottoElettronico));
+    public ProdottoElettronico(String nome, String marca, float prezzo, int iva) {
+        // CODICE (ProdottoElettronico);
         Random generator = new Random();
         this.codice = generator.nextInt(100000);
         // NOME (ProdottoElettronico)
         this.nome = nome;
-        // DESCRIZIONE (ProdottoElettronico)
-        this.descrizione = descrizione;
+        // MARCA (ProdottoElettronico)
+        this.marca = marca;
         // PREZZO (ProdottoElettronico)
         this.prezzo = prezzo;
         // CALCOLO IVA (ProdottoElettronico)
         this.iva = iva;
     }
 
-    // METODI
+    // ---- METODI ----
+
+    // CODICE
     public int getCodice() {
         return codice;
     }
 
+    // NOME
     public String getNome() {
         return nome;
     }
@@ -38,14 +41,16 @@ public class ProdottoElettronico {
         this.nome = nome;
     }
 
-    public String getDescrizione() {
-        return descrizione;
+    // MARCA
+    public String getMarca() {
+        return marca;
     }
 
-    public void setDescrizione(String descrizione) {
-        this.descrizione = descrizione;
+    public void setmarca(String marca) {
+        this.marca = marca;
     }
 
+    // PREZZO
     public float getPrezzo() {
         return prezzo;
     }
@@ -55,12 +60,18 @@ public class ProdottoElettronico {
 
     }
 
+    // PREZZO + IVA
     public float getPrezzoConIva() {
         return prezzo + (prezzo * iva / 100f);
     }
 
+    // NOME ESTESO
     public String getNomeEsteso() {
         return nome + " " + getCodice();
     }
+
+
+    
+    
 
 }
