@@ -5,20 +5,20 @@ import org.lessons.java.shop.ProdottoElettronico;
 public class Televisori extends ProdottoElettronico {
 
         protected int pollici;
-        protected boolean smarttv;
+        protected boolean issmarttv;
 
-        public Televisori(String nome, String marca, float prezzo, int iva, int pollici, boolean smarttv){
+        public Televisori(String nome, String marca, float prezzo, int iva, int pollici, boolean issmarttv){
                 super(nome, marca, prezzo,iva);
                 this.pollici = pollici;
-                this.smarttv = smarttv;
+                this.issmarttv = issmarttv;
         }
 
         public int getPollici() {
                 return this.pollici;
         }
 
-        public boolean getSmarttv() {
-                return this.smarttv;
+        public boolean getiSsmarttv() {
+                return this.issmarttv;
         }
 
 }
