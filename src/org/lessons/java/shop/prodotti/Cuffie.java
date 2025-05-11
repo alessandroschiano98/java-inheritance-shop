@@ -5,22 +5,21 @@ import org.lessons.java.shop.ProdottoElettronico;
 public class Cuffie extends ProdottoElettronico {
 
     protected String colore;
-    protected boolean iswireless;
+    protected boolean wireless;
 
-    public Cuffie(String nome, String marca, float prezzo, int iva, String colore, boolean iswireless) {
+    public Cuffie(String nome, String marca, float prezzo, int iva, String colore, boolean wireless) {
         super(nome, marca, prezzo, iva);
         this.colore = colore;
-        this.iswireless = iswireless;
+        this.wireless = wireless;
     }
 
-    public String getColore(){
+    public String getColore() {
         return this.colore;
     }
 
-    public boolean getiIswireless(){
-        return this.iswireless;
+    public boolean getWireless() {
+        return this.wireless;
     }
 
-    
-
 }
+

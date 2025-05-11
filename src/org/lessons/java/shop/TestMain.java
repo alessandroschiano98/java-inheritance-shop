@@ -17,9 +17,9 @@ public class TestMain {
         System.out.println(String.format("%.2f", smartphone.getPrezzoConIva()) + " euro");
         System.out.println(smartphone.getNomeEsteso());
         System.err.println("--------------------------------");
-        Televisori televisori = new Televisori("Samsung X4", "Samsung", 300, 22, 70, false);
+        Televisori televisori = new Televisori("Samsung UMD5", "Samsung", 300, 22, 70,true);
         System.out.println(televisori.getPollici() + " pollici");
-        System.out.println((televisori.getiSsmarttv()));
+        System.out.println((televisori.getSmartTv()));
         System.out.println(televisori.getCodice());
         System.out.println(televisori.getNome());
         System.out.println(televisori.getMarca());
@@ -29,7 +29,7 @@ public class TestMain {
         System.err.println("--------------------------------");
         Cuffie cuffie = new Cuffie("AirPods3", "Apple", 150, 22, "black", true);
         System.out.println(cuffie.getColore());
-        System.out.println((cuffie.getiIswireless()));
+        System.out.println((cuffie.getWireless()));
         System.out.println(cuffie.getCodice());
         System.out.println(cuffie.getNome());
         System.out.println(cuffie.getMarca());
