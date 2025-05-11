@@ -11,6 +11,7 @@ public class Cuffie extends ProdottoElettronico {
         super(nome, marca, prezzo, iva);
         this.colore = colore;
         this.wireless = wireless;
+
     }
 
     public String getColore() {
@@ -20,6 +21,4 @@ public class Cuffie extends ProdottoElettronico {
     public boolean getWireless() {
         return this.wireless;
     }
-
 }
-
