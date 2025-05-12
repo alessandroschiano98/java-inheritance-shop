@@ -4,7 +4,7 @@ import org.lessons.java.shop.ProdottoElettronico;
 
 public class Smartphone extends ProdottoElettronico {
 
-    protected int codiceIMEI;
+    private int codiceIMEI;
     protected int memoria;
 
     public Smartphone(String nome, String marca, float prezzo, int iva, int codiceIMEI, int memoria) {
@@ -21,4 +21,11 @@ public class Smartphone extends ProdottoElettronico {
         return this.memoria;
     }
 
+    @Override
+    public String infoProdotto() { 
+        return super.infoProdotto() + " " + memoria + " GB"  ;}
+
 }
+
+
+

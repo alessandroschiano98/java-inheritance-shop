@@ -15,9 +15,9 @@ public class TestMain {
         System.out.println(smartphone.getMarca());
         System.out.println(String.format("%.2f", smartphone.getPrezzo()) + " euro");
         System.out.println(String.format("%.2f", smartphone.getPrezzoConIva()) + " euro");
-        System.out.println(smartphone.getNomeEsteso());
+        System.out.println(smartphone.infoProdotto());
         System.err.println("--------------------------------");
-        Televisori televisori = new Televisori("Samsung UMD5", "Samsung", 300, 22, 70,true);
+        Televisori televisori = new Televisori("Samsung UMD5", "Samsung", 300, 22, 70,"Smart Tv");
         System.out.println(televisori.getPollici() + " pollici");
         System.out.println((televisori.getTipologia()));
         System.out.println(televisori.getCodice());
@@ -25,9 +25,10 @@ public class TestMain {
         System.out.println(televisori.getMarca());
         System.out.println(String.format("%.2f", televisori.getPrezzo()) + " euro");
         System.out.println(String.format("%.2f", televisori.getPrezzoConIva()) + " euro");
-        System.out.println(televisori.getNomeEsteso());
+    
+        System.out.println(televisori.infoProdotto());
         System.err.println("--------------------------------");
-        Cuffie cuffie = new Cuffie("AirPods3", "Apple", 150, 22, "black",true);
+        Cuffie cuffie = new Cuffie("AirPods3", "Apple", 150, 22, "Black","Wireless");
         System.out.println(cuffie.getColore());
         System.out.println((cuffie.getWireless()));
         System.out.println(cuffie.getCodice());
@@ -35,7 +36,7 @@ public class TestMain {
         System.out.println(cuffie.getMarca());
         System.out.println(String.format("%.2f", cuffie.getPrezzo()) + " euro");
         System.out.println(String.format("%.2f", cuffie.getPrezzoConIva()) + " euro");
-        System.out.println(cuffie.getNomeEsteso());
+        System.out.println(cuffie.infoProdotto());
 
     }
 }

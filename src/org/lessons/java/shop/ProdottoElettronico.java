@@ -70,8 +70,10 @@ public class ProdottoElettronico {
         return nome + " " + getCodice();
     }
 
-
-    
-    
+    // INFO PRODOTTO
+    public String infoProdotto() {
+        return nome + " " + getCodice() + " " + marca + ", al prezzo di " + String.format("%.2f", getPrezzo()) + " euro" + "("
+                + String.format("%.2f", getPrezzoConIva()) + " euro IVA),";
+    }
 
 }
