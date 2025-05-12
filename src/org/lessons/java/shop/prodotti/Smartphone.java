@@ -23,7 +23,7 @@ public class Smartphone extends ProdottoElettronico {
 
     @Override
     public String infoProdotto() { 
-        return super.infoProdotto() + " " + memoria + " GB"  ;}
+        return "Hai selezionato " + super.infoProdotto() + " " + memoria + " GB"  ;}
 
 }
 

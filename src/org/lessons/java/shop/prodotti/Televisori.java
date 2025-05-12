@@ -23,7 +23,7 @@ public class Televisori extends ProdottoElettronico {
 
         @Override
         public String infoProdotto() {
-                return "Hai scelto " + super.infoProdotto() + " " + this.pollici + " pollici " + " e  "
+                return "Hai selezionato " + super.infoProdotto() + " " + this.pollici + " pollici " + " e  "
                                 + this.smartTv;
         }
 

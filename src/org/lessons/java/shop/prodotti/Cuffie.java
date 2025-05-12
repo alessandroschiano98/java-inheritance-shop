@@ -24,6 +24,6 @@ public class Cuffie extends ProdottoElettronico {
 
     @Override
     public String infoProdotto() { 
-        return super.infoProdotto() + " colore " + this.colore + ", tipologia " + this.wireless;}
+        return "Hai selezionato " + super.infoProdotto() + " colore " + this.colore + ", tipologia " + this.wireless;}
 
 }

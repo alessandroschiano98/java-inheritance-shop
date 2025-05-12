@@ -65,11 +65,6 @@ public class ProdottoElettronico {
         return prezzo + (prezzo * iva / 100f);
     }
 
-    // NOME ESTESO
-    public String getNomeEsteso() {
-        return nome + " " + getCodice();
-    }
-
     // INFO PRODOTTO
     public String infoProdotto() {
         return nome + " " + getCodice() + " " + marca + ", al prezzo di " + String.format("%.2f", getPrezzo()) + " euro" + "("
