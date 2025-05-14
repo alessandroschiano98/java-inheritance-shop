@@ -1,31 +1,35 @@
 package org.lessons.java.shop.prodotti;
 
-import org.lessons.java.shop.ProdottoElettronico;
+import java.math.BigDecimal;
 
-public class Smartphone extends ProdottoElettronico {
+public class Smartphone extends Prodotto {
+    private String codiceImei;
+	private int memoriaInGb;
 
-    private int codiceIMEI;
-    protected int memoria;
+	public Smartphone(String nome, String marca, BigDecimal prezzo, String codiceImei, int memoriaInGb) {
+		super(nome, marca, prezzo);
+		this.codiceImei = codiceImei;
+		this.memoriaInGb = memoriaInGb;
+	}
 
-    public Smartphone(String nome, String marca, float prezzo, int iva, int codiceIMEI, int memoria) {
-        super(nome, marca, prezzo, iva);
-        this.codiceIMEI = codiceIMEI;
-        this.memoria = memoria;
-    }
+	public String getCodiceImei() {
+		return codiceImei;
+	}
 
-    public int getcodiceIMEI() {
-        return this.codiceIMEI;
-    }
+	public void setCodiceImei(String codImei) {
+		this.codiceImei = codImei;
+	}
 
-    public int getmemoria() {
-        return this.memoria;
-    }
+	public int getMemoriaInGb() {
+		return memoriaInGb;
+	}
+
+	public void setMemoriaInGb(int memoriaInGb) {
+		this.memoriaInGb = memoriaInGb;
+	}
 
     @Override
-    public String infoProdotto() { 
-        return "Hai selezionato " + super.infoProdotto() + " " + memoria + " GB"  ;}
-
+    public String toString(){
+        return super.toString() + "\nCodice imei: " + this.codiceImei + "\nMemoria " + memoriaInGb + "GB" ;
+    }
 }
-
-
-

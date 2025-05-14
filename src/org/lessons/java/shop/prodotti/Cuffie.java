@@ -1,29 +1,35 @@
 package org.lessons.java.shop.prodotti;
 
-import org.lessons.java.shop.ProdottoElettronico;
+import java.math.BigDecimal;
 
-public class Cuffie extends ProdottoElettronico {
+public class Cuffie extends Prodotto  {
+    private String colore;
+	private boolean isWireless;
 
-    protected String colore;
-    protected String wireless;
+	public Cuffie(String nome, String marca, BigDecimal prezzo, String colore, boolean isWireless) {
+		super(nome, marca, prezzo);
+		this.colore = colore;
+		this.isWireless = isWireless;
+	}
 
-    public Cuffie(String nome, String marca, float prezzo, int iva, String colore, String wireless) {
-        super(nome, marca, prezzo, iva);
-        this.colore = colore;
-        this.wireless = wireless;
+	public String getColore() {
+		return colore;
+	}
 
-    }
+	public void setColore(String colore) {
+		this.colore = colore;
+	}
 
-    public String getColore() {
-        return this.colore;
-    }
+	public boolean isWireless() {
+		return isWireless;
+	}
 
-    public String getWireless() {
-        return this.wireless;
-    }
+	public void setWireless(boolean isWireless) {
+		this.isWireless = isWireless;
+	}
 
-    @Override
-    public String infoProdotto() { 
-        return "Hai selezionato " + super.infoProdotto() + " colore " + this.colore + ", tipologia " + this.wireless;}
-
+	@Override
+	public String toString() {
+		return super.toString() + "\nColore : " + getColore() + "\nWireless : " + isWireless();
+	}
 }
